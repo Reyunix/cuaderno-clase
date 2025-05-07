@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase de HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" style="text-decoration: none; color: black;">Cuaderno de apuntes</a ></h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="etiquetas.html">Etiquetas</a></li>
+          <li><a href="encabezados-parrafo.html">Encabezados</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </nav>
+    </header>
+    <main>               
+      <section>
+        <h2>Formulario de contacto</h2>
+        <form action="/">
+            <fieldset>
+                <legend>Información personal</legend>
+                <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Enrique">
+                </div>
+        </div>
+            <label>Correo
+                <input 
+                    type="email"
+                    name="correo"
+                    placeholder="a@gmail.com"
+                >                
+            </label>                   
+        </div>       
+            </fieldset>
+        <!-- Podemos poner el input dentro del label así cuando hacemos
+         clic en el texto nos posiciona en el campo de texto. Otra alternativa
+         es usar ids en caso de que no tengamos un label cerca. -->
+        </form>
+      </section> 
+    </main>
+  </body>
+  <footer>&copy; the real notebook <a href="https://github.com/Reyunix/cuaderno-clase" target="_blank">Repositorio GitHub</a></footer>
+</html>

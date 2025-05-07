@@ -1,62 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- Metadado del html -->
+  <!-- Metadato del html -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clase de HTML</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <h1>Cuaderno de apuntes</h1>
+      <h1><a href="index.html" style="text-decoration: none; color: black;">Cuaderno de apuntes</a ></h1>
       <hr />
       <nav>
         <ul>
-          <li><a href="">Apuntes</a></li>
-          <li>
-            <a href="https://github.com/Reyunix/cuaderno-clase" target="_blank"
-              >Repositorio GitHub</a
-            >
-          </li>
-          <li><a href="">Contacto</a></li>
-        </ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="etiquetas.html">Etiquetas</a></li>
+          <li><a href="encabezados-parrafo.html">Encabezados</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
       </nav>
     </header>
     <main>
-      <aside>En esta página voy a ir actualizando todos los apuntes del curso.</aside>
+      <aside>En esta página voy a ir actualizando todos los apuntes del curso de <strong>Desarrollo Web</strong> en <a href="https://kingscorner.es/" target="_blank">Kings Corner</a>.</aside>
       <article>
-      <h2>La semántica en HTML</h2>      
+      <h2>La semántica de las etiquetas HTML</h2>
+      <p>El pilar fundamental de este lenguaje de marcas son las etiquetas. Sirven para identificar y estructurar el contenido dentro de un documento web. Lo que muchos olvidan a la hora de escribir un código html es la semántica de las etiquetas.</p> 
+      <p>A continuación mencionaré alguno de los aspectos más importantes:</p>     
       <ul>
-        <li>Hay que entender la importancia de la semántica en HTML</li>
-        <li>Las etiquetas de HTML no son meros bloques para estructurar el contenido de nuestra web</li>
-        <li>Las etiquetas también tienen un significado semántico y hay que tenerlo en cuenta a la hora de utilizarlas.</li>
-        <li>Ayudan a que se pueda entender el contenido de una manera mucho más sencilla</li>
+        <li>Hay que tener en cuenta tanto el contexto y la función de los distintos elementos de la web</li>
+        <li>Las etiquetas de HTML no son meros bloques para estructurar el contenido de nuestra web. Las etiquetas también tienen un <em>significado</em> semántico y hay que tenerlo en cuenta a la hora de utilizarlas.</li>
+        <li>Ayudan a la hora de implementar funcionalidaes adicionales. Nos facilitan mucho el trabajo si usamos todo su potencial.</li>
         <li>Una buena selección de etiquetas mejora muchísimo la accesibilidad ya que facilitamos mucho la lectura del documento a personas con visibilidad reducida, sobretodo si hacemos un correcto uso de etiquetas como *header, nav, main, section...*</li>
         <li>Saber usar las etiquetas también mejora cómo los buscadores posicionan nuestras webs porque lo valoran mucho.</li>
       </ul>
+
       <h3>Ejemplos</h3>
       <h4>Sin tener en cuenta la semántica</h4>
-      <pre> <code>&lt;div&gt;
-  &lt;h2&gt;Contacto&lt;/h2&gt;
-  &lt;p&gt;Dirección: Calle falsa 123&lt;/p&gt;
-&lt;/div&gt;
-</code>
-</pre>
-
-<h4>Teniendo en cuenta la semántica</h4>
-<pre> <code>&lt;section aria-labbely="contact-heading"&gt;
-  &lt;h2&gt;Contacto&lt;/h2&gt;
-  &lt;address&gt;Calle falsa 123&lt;/address&gt;
-&lt;/section&gt;
-</code>
-</pre>
-
-    </article>
-    <article>
-      <h2></h2>
-    </article>
-      <!-- Contenido -->
+      <img title="captura de pantalla" width="300" src="/img/captura1.png" alt="Captura de pantalla de un código html usando etiquetas div, h2 y p">
+      <h4>Teniendo en cuenta la semántica</h4>
+      <img title="captura de pantalla" width="300" src="/img/captura2.png" alt="Capturta de pantalla de un código html usando etiquetas section, h2, address y atributos">
+      </article>
     </main>
   </body>
-  <footer>&copy; Todos los derechos reservados</footer>
+  <footer>&copy; the real notebook <a href="https://github.com/Reyunix/cuaderno-clase" target="_blank">Repositorio GitHub</a></footer>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase de HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" style="text-decoration: none; color: black;">Cuaderno de apuntes</a ></h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="etiquetas.html">Etiquetas</a></li>
+          <li><a href="encabezados-parrafo.html">Encabezados</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </nav>
+    </header>
+    <main>
+      <h2>Uso de las etiquetas</h2>
+      <ul>
+        <li>
+          Las etiquetas [header] no sólo se pueden utilizar en la parte de
+          arriba de nuestra página. No hay que tener miedo a usar esta etiqueta
+          dentro de otras como 'section'.
+        </li>
+        <li>
+          [aside] Contenido que se relaciona de manera indirecta con el
+          contenido principal del documento. Por ejemplo: un portfolio en el que
+          estás hablando de tus proyectos pero que en una parte mencionas cuáles
+          son tus tecnologías favoritas. Sería algo así como una anécdota o un
+          añadido al contenido principal.
+        </li>
+        <li>
+          [article] Contenido que podría ser un bloque independiente de
+          información que no perdería significado si se copia en otro lugar.
+        </li>
+        <li>
+          [section] Marca secciones independientes genéricas de un documento.
+          Puede haber secciones dentro de secciones (usar con cabeza, tampoco
+          hay que pasarse).
+        </li>
+        <li>
+          [main] Sólo puede haber uno. Sería el contenido principal. Es
+          básicamente el contenido que cambia y distingue a cada página. Se
+          separa del header y el footer.
+        </li>
+        <li>
+          [nav] Indica un elemento de navegación. Se integra dentro del header
+          principal. Aquí se encuentran los enlaces a otras páginas de la misma
+          web (enlaces internos) y enlaces fuera de la web (enlaces externos).
+        </li>
+        <li>
+          [span] No es que esté prohibido su uso pero es mejor minimizarlo al
+          mínimo. Lo usaremos cuando necesitemos estilizar algo muy puntual y no
+          tengamos otra opción semántica adecuada.
+        </li>
+        <li>
+          [div] Parecido al span, hay que intentar no usarlo si existe otra
+          etiqueta con una semántica adecuada. En caso de utilizarlo podemos
+          darle contexto otorgándole un rol como ***role="alert*"**, por
+          ejemplo.
+        </li>
+      </ul>
+    </main>
+  </body>
+  <footer>&copy; the real notebook <a href="https://github.com/Reyunix/cuaderno-clase" target="_blank">Repositorio GitHub</a></footer>
+</html>
