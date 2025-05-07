@@ -8,14 +8,53 @@
   </head>
   <body>
     <header>
-      <h1>Título</h1>
+      <h1>Cuaderno de apuntes</h1>
       <hr />
       <nav>
-        <a href="">Apuntes</a><a href="https://github.com/Reyunix/cuaderno-clase" target="_blank"
-          >Repositorio</a>
+        <ul>
+          <li><a href="">Apuntes</a></li>
+          <li>
+            <a href="https://github.com/Reyunix/cuaderno-clase" target="_blank"
+              >Repositorio GitHub</a
+            >
+          </li>
+          <li><a href="">Contacto</a></li>
+        </ul>
       </nav>
     </header>
     <main>
+      <aside>En esta página voy a ir actualizando todos los apuntes del curso.</aside>
+      <article>
+      <h2>La semántica en HTML</h2>      
+      <ul>
+        <li>Hay que entender la importancia de la semántica en HTML</li>
+        <li>Las etiquetas de HTML no son meros bloques para estructurar el contenido de nuestra web</li>
+        <li>Las etiquetas también tienen un significado semántico y hay que tenerlo en cuenta a la hora de utilizarlas.</li>
+        <li>Ayudan a que se pueda entender el contenido de una manera mucho más sencilla</li>
+        <li>Una buena selección de etiquetas mejora muchísimo la accesibilidad ya que facilitamos mucho la lectura del documento a personas con visibilidad reducida, sobretodo si hacemos un correcto uso de etiquetas como *header, nav, main, section...*</li>
+        <li>Saber usar las etiquetas también mejora cómo los buscadores posicionan nuestras webs porque lo valoran mucho.</li>
+      </ul>
+      <h3>Ejemplos</h3>
+      <h4>Sin tener en cuenta la semántica</h4>
+      <pre> <code>&lt;div&gt;
+  &lt;h2&gt;Contacto&lt;/h2&gt;
+  &lt;p&gt;Dirección: Calle falsa 123&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+<h4>Teniendo en cuenta la semántica</h4>
+<pre> <code>&lt;section aria-labbely="contact-heading"&gt;
+  &lt;h2&gt;Contacto&lt;/h2&gt;
+  &lt;address&gt;Calle falsa 123&lt;/address&gt;
+&lt;/section&gt;
+</code>
+</pre>
+
+    </article>
+    <article>
+      <h2></h2>
+    </article>
       <!-- Contenido -->
     </main>
   </body>
