@@ -24,25 +24,36 @@
       <section>
         <h2>Formulario de contacto</h2>
         <form action="/">
-            <fieldset>
-                <legend>Información personal</legend>
-                <div>
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Enrique">
-                </div>
-        </div>
-            <label>Correo
-                <input 
-                    type="email"
-                    name="correo"
-                    placeholder="a@gmail.com"
-                >                
-            </label>                   
-        </div>       
-            </fieldset>
-        <!-- Podemos poner el input dentro del label así cuando hacemos
-         clic en el texto nos posiciona en el campo de texto. Otra alternativa
-         es usar ids en caso de que no tengamos un label cerca. -->
+          <fieldset>
+            <legend>Información personal</legend>
+            <div>
+              <label for="name">Nombre</label>
+              <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Enrique"
+              required
+              >
+            </div>
+            <div>
+              <label>Correo
+              <input 
+                  type="email"
+                  name="correo"
+                  placeholder="a@gmail.com"
+                  required
+              >                
+              </label>                   
+            </div>
+            <div>
+              <textarea rows="5" cols="25" id="" placeholder="Escribe aquí..." required></textarea>
+            </div>       
+          </fieldset>
+          <input type="submit" value="Enviar">
+      <!-- Podemos poner el input dentro del label así cuando hacemos
+        clic en el texto nos posiciona en el campo de texto. Otra alternativa
+        es usar ids en caso de que no tengamos un label cerca. -->
         </form>
       </section> 
     </main>
